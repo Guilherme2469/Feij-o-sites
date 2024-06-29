@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 100px;
+}
+
+p{
+    font-size: 50px;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.fotos{
+    display: flex;
+    gap: 20px;
+
+}
+
+.avatar{
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fotos :nth-child(2){
+    transition-delay: 200ms;
+}
+
+.fotos :nth-child(3){
+    transition-delay: 700ms;
+}
+
+.fotos :nth-child(4){
+    transition-delay: 1000ms;
+}
+
+.fotos :nth-child(5){
+    transition-delay: 1300ms;
+}
+
+.fotos :nth-child(6){
+    transition-delay: 1600ms;
+}
+
+.fotos :nth-child(7){
+    transition-delay: 1900ms;
+}
